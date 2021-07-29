@@ -1,0 +1,115 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+main {
+  position: relative;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 26px;
+}
+
+a {
+  font-family: sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  font-family: sans-serif;
+}
+
+section {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 16px;
+  height: calc(100vh - 75px);
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 75px;
+  background-color: #333333;
+}
+header nav {
+  width: 40%;
+}
+header nav ul {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image-wrapper {
+  max-width: 30%;
+  height: 20%;
+}
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+#splash {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80%;
+}
+#splash > * {
+  width: 50%;
+}
+#splash img {
+  transition: transform 0.2s ease-in;
+}
+#splash img:hover {
+  transform: scale(1.3);
+}
+#splash .text {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  height: 100%;
+}
+#splash .text p:first-child {
+  font-weight: 700;
+  font-family: serif;
+  font-size: 1.75rem;
+}
+#splash .text p:nth-child(3) {
+  color: #ed65f0;
+  font-family: serif;
+}
+#splash .text p span {
+  text-decoration: underline;
+  text-decoration-color: #a876f1;
+  text-decoration-thickness: 7px;
+}
+#splash .text a {
+  color: white;
+  background-color: #ed65f0;
+  width: 14.25rem;
+  padding: 1.5rem;
+  align-self: center;
+  transition: background-color 0.2s ease-in;
+}
+#splash .text a:hover {
+  background-color: #e6cf27;
+}
+
+/*# sourceMappingURL=index.css.map */
